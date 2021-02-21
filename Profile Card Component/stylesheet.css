@@ -1,24 +1,119 @@
 body{
   margin:0;
-  background-color:Darkcyan;
+  padding:0;
+  background-color:darkcyan;
+  font-family: 'Kumbh Sans', sans-serif;
 }
-.profile-card{
-height:130px;
-}
-.cardimage-top{
+.profile-card-component{
   position:relative;
-  right:350px;
-  bottom:600px;
-  z-index:-1;
+  max-width:1440px;
+  height:100vh;
+  overflow:hidden;
 }
 .card{
-  max-width:340px;
-  height:350px;
+  height:320px;
+  max-width:300px;
+  background-color:white;
   margin:auto;
-  background-color: white;
-  border-radius: 20px;
+  border-radius:20px;
+  position:relative;
+  top:150px;
 }
-.cardprint{
-  position: relative;
-  z-index:10;
+.card-top-pattern{
+  max-width:300px;
+  height:120px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.victor-image{
+  border-radius:50%;
+  border:3px solid white;
+  position:absolute;
+  max-width:85px;
+  left:105px;
+  top:75px;
+}
+
+.victor-data{
+  padding-top:50px;
+  text-align:center;
+}
+
+.victor-name{
+  font-weight:bold;
+}
+.victor-age{
+  color:darkgrey;
+  padding-left:5px;
+}
+.victor-place{
+  margin-top:-5px;
+  font-size:13px;
+  color:darkgrey;
+  font-weight: bold;
+  padding-bottom:20px;
+  border-bottom:1px solid lightgrey;
+}
+.social-profile{
+  display:flex;
+  justify-content:space-around;
+  margin-top:-8px;
+  text-align:center;
+}
+.number{
+  font-weight:bold;
+  font-size:14px;
+}
+.title{
+  font-size:12px;
+  color:darkgrey;
+  font-weight:bold;
+  margin-top:-10px;
+}
+.victor-followers{
+  padding-left:30px;
+}
+.victor-photos{
+  padding-right:30px;
+}
+.pattern{
+  position:relative;
+}
+.circle{
+  border-radius:50%;
+  position:absolute;
+  z-index:-1;
+}
+.svg-top{
+  top:-540px;
+  left:-360px;
+  transform: rotate(-15deg);
+}
+.svg-bottom{
+  right:-330px;
+  top:-40px;
+  transform:rotate(-45deg);
+}
+
+@media (max-width:375px){
+  .card{
+    max-width:280px;
+  }
+  .card-top-pattern{
+    max-width:280px;
+  }
+  .victor-image{
+    left:95px;
+  }
+  .svg-top{
+    top:-600px;
+    left:-720px;
+    transform:rotate(-25deg);
+  }
+  .svg-bottom{
+   top:-10px;
+   right:-700px;
+   transform:rotate(-75deg);
+  }
 }
