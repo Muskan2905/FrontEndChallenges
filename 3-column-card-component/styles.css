@@ -1,0 +1,132 @@
+
+/* Tags */
+body{
+  color:white;
+}
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+}
+p{
+  color:white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size:13.5px;
+  line-height:1.6;
+  opacity:0.75;
+}
+/* Card component */
+.card-component{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  position:relative;
+  top:80px;
+}
+.card{
+  min-height:350px;
+  max-width:200px;
+}
+.one{
+  background-color:#e38826;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding:30px;
+}
+.two{
+  background-color:#006970;
+  padding:30px;
+}
+.three{
+  background-color:#004241;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:30px;
+}
+/* Buttons */
+.button{
+  background-color:#f2f2f2;
+  border-radius:20px;
+  padding:8px 6px;
+  text-align:center;
+  margin-top:60px;
+  max-width:100px;
+  box-shadow:0.5px 0 0.5px 2.5px #e6e6e6;
+}
+.button:hover{
+  background-color:#ffffff;
+}
+.btn-one{
+  color:#e38826;
+  text-shadow:0.5px 0 0.5px #e38826;
+  opacity:1;
+}
+.btn-two{
+  color:#006970;
+  text-shadow:0.5px 0 0.5px #006970;
+  opacity:1;
+}
+.btn-three{
+  color:#004241;
+  text-shadow:0.5px 0 0.5px #004241;
+  opacity:1;
+}
+/* Media Queries */
+@media (max-width:800px){
+  p{
+    font-size:13px;
+  }
+  .card{
+    max-width:150px;
+  }
+}
+
+@media (max-width:650px){
+  .card-component{
+    position:relative;
+    top:65px;
+  }
+  .card{
+    max-width:130px;
+  }
+  .button{
+    padding:8px 3px;
+  }
+}
+
+@media (max-width:600px){
+  .card{
+    max-width:100px;
+  }
+  .card-component{
+    position:relative;
+    top:30px;
+  }
+  .btn-two{
+    margin-top:80px;
+  }
+}
+
+@media (max-width:375px){
+  p{
+    line-height:2;
+  }
+  .card-component{
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:100px;
+  }
+  .card{
+    max-width:200px;
+    min-height:280px;
+  }
+  .one{
+    border-top-right-radius:10px;
+    border-bottom-left-radius:0;
+  }
+  .three{
+    border-bottom-left-radius:10px;
+    border-top-right-radius:0;
+  }
+  .button{
+    margin-top:40px;
+  }
+}
